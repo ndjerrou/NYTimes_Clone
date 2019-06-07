@@ -2,8 +2,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* height: 100px; */
     margin-left: 10px;
+    margin-top: -5px;
+    flex-wrap: wrap;
 }
 
 #menu-nav {
@@ -32,4 +33,37 @@ nav {
     font-weight: 800;
     border-radius: 5px;
     margin-right: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cover-photo-article {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#container-article-title {
+    margin-bottom: 20px;
+}
+
+#article-title {
+    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+    line-height: 1.4;
+    width: 54%;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 180%;
+    float: left;
+}
+
+main {
+    margin-top: 45px;
+}
+
+figcaption {
+    color: grey;
 }
