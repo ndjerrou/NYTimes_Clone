@@ -35,35 +35,45 @@ nav {
     margin-right: 10px;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#cover-photo-article {
-    width: 75%;
-    margin: 0 auto;
-}
-
-#container-article-title {
-    margin-bottom: 20px;
-}
-
-#article-title {
-    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
-    line-height: 1.4;
-    width: 54%;
-    margin: 0 auto;
-    font-style: italic;
-    font-size: 180%;
-    float: left;
-}
-
 main {
     margin-top: 45px;
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#wrap-figure {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#container-art-title {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#art-title {
+    width: 61%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 26px;
+    font-style: italic;
+    line-height: 1.6
+}
+
 figcaption {
+    margin-top: 5px;
+}
+
+#author-art {
     color: grey;
+    font-size: 14px;
+}
+
+figure>img {
+    width: 1128px;
+    height: 622px;
 }
