@@ -75,7 +75,7 @@ figcaption {
   font-size: 13px;
 }
 
-figure > img {
+figure>img {
   max-width: 100%;
   height: auto;
 }
@@ -85,7 +85,9 @@ article {
   flex-direction: column;
   margin: 0 auto;
   width: 40%;
+  margin-bottom: 70px;
 }
+
 #below-author-name {
   display: flex;
   justify-content: space-between;
@@ -95,6 +97,7 @@ article {
   max-width: 100%;
   height: auto;
 }
+
 #text-on-image-upper {
   display: flex;
   justify-content: space-between;
@@ -116,30 +119,34 @@ article {
   color: grey;
   text-align: left;
 }
+
 #text-on-image-lower p {
   width: 70%;
 }
+
 .small-font {
   font-size: 13px;
   color: grey;
 }
-#video-credits1,
-#video-credits2 {
+
+#video-credits1, #video-credits2 {
   margin: 0;
 }
+
 #video-credits1 {
   font-size: 15px;
   color: #666666;
 }
+
 #video-credits2 {
   font-size: 13px;
   color: #888888;
 }
+
 iframe {
   max-width: 100%;
 }
-#jumbo-image-middle-article {
-}
+
 #jumbo-image-middle-article-container {
   display: flex;
   justify-content: center;
@@ -147,10 +154,12 @@ iframe {
   margin: 0 auto;
   width: 50%;
 }
+
 #end-smallprints {
   color: #999999;
   font-size: 12px;
 }
+
 i {
   background-color: lightgrey;
   font-size: 10px;
@@ -158,14 +167,126 @@ i {
   border: 1x solid lightgrey;
   padding: 4px 8px;
 }
+
 #end-of-article {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
 #end-of-article button {
   color: white;
   background-color: #6288a5;
-  padding: 5px 20px;
+  padding: 10px 15px;
   border-radius: 5px;
   width: 50%;
+}
+
+#row-related-articles {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.column-presentation-related-article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#related-articles {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.cover-img-related-art {
+  width: 273px;
+  height: 182px;
+}
+
+.extract-related-article {
+  width: 85%;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.published-date-related-article {
+  color: grey;
+  font-size: 13px;
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#separator-footer {
+  color: grey;
+  border-top-width: 2px;
+}
+
+#link-to-home-footer {
+  font-size: 11px;
+}
+
+#line-1-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#line-2-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#title-related-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+#columns-links-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#columns-links-footer>ul>li {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+#columns-links-footer>ul>li>a {
+  color: black;
+}
+
+#columns-links-footer>ul>li>a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#subscribe-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#links-subscribe-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#icons-links-subscribe-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#icons-links-subscribe-section>i {
+  margin-right: 5px;
+}
+
+#subscribe-section>div>a {
+  color: black;
+}
+
+#subscribe-section>div>a:hover {
+  text-decoration: underline;
 }
