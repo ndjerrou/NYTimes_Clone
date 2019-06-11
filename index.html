@@ -10,32 +10,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css"
     />
-
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <nav>
-      <div id="menu-nav">
-        <i class="material-icons">menu</i>
-        <i class="material-icons">search</i>
-        <span>COSMOS</span>
-      </div>
-      <div id="title-nav">
+      <ul class="container">
+        <div id="category-nav">
+          <i class="align justify icon"></i>
+          <i class="search icon"></i>
+          <span>COSMOS</span>
+        </div>
         <img src="./assets/images/The-New-York-Times-vector-logo.png" alt="" />
-      </div>
-      <div id="subscription-nav">
-        <button class="buttons-nav">
-          Subscribe Today
-        </button>
-        <button class="buttons-nav">
-          Log In
-        </button>
-      </div>
+
+        <div id="subscription-nav">
+          <button class="buttons-nav">
+            Subscribe Today
+          </button>
+          <button class="buttons-nav">
+            Log In
+          </button>
+        </div>
+      </ul>
     </nav>
-    <hr />
+    <hr style="clear: right;" />
 
     <main>
       <section>
@@ -746,11 +742,45 @@
           </div>
         </div>
       </aside>
+      <aside id="second-floating-sidebar">
+        <h2>Sign up for Science Times</h2>
+        <p>
+          We’ll bring you stories that capture the wonders of the human body,
+          nature and the cosmos.
+          <button>Sign Up</button>
+        </p>
+      </aside>
+
+      <aside id="first-floating-sidebar">
+        <h2>Editor's Picks</h2>
+        <div class="left-asidebar-part">
+          <img src="./assets/images/right-floating-sidebar1.jpg" alt="" />
+          <p class="font-aside"><a href="#">Madonna at Sixty</a></p>
+        </div>
+        <div class="left-asidebar-part">
+          <img src="./assets/images/right-floating-sidebar2.jpg" alt="" />
+          <p class="font-aside">
+            <a href="#"
+              >For These Women, a FIRE That Burns Too Male and Too White</a
+            >
+          </p>
+        </div>
+        <div class="left-asidebar-part">
+          <img src="./assets/images/right-floating-sidebar3.jpg" alt="" />
+          <p class="font-aside">
+            <a href="#">The Window That Burns the Plaza Hotel</a>
+          </p>
+        </div>
+      </aside>
     </main>
     <footer>
       <hr id="separator-footer" />
       <div id="line-1-footer">
-        <img src="./assets/images/The-New-York-Times-vector-logo.png" alt="" />
+        <img
+          src="./assets/images/The-New-York-Times-vector-logo.png"
+          alt=""
+          width="170px"
+        />
         <a href="https://www.nytimes.com/" id="">Go to Home Page</a>
       </div>
       <div id="line-2-footer">
@@ -826,21 +856,19 @@
           </ul>
         </div>
         <div id="subscribe-section">
-          <div id="icons-links-subscribe-section">
-            <h3>Subscribe</h3>
-            <div id="icons-links-subscribe-section-wrapper">
-              <i class=" newspaper icon"></i><a href="">Home Delivery</a>
-            </div>
-            <div id="icons-links-subscribe-section-wrapper">
-              <i class=" newspaper icon"></i
-              ><a href="">Digital Subscriptions</a>
-            </div>
-            <div id="icons-links-subscribe-section-wrapper">
-              <i class=" microsoft icon"></i><a href="">Crossword</a>
-            </div>
-            <div id="icons-links-subscribe-section-wrapper">
-              <i class=" star half outline icon"></i><a href="">Cooking</a>
-            </div>
+          <h3>Subscribe</h3>
+          <div class="icons-links-subscribe-section-wrapper">
+            <i class="large newspaper icon"></i><a href="">Home Delivery</a>
+          </div>
+          <div class="icons-links-subscribe-section-wrapper">
+            <i class="large newspaper icon"></i
+            ><a href="">Digital Subscriptions</a>
+          </div>
+          <div class="icons-links-subscribe-section-wrapper">
+            <i class="large microsoft icon"></i><a href="">Crossword</a>
+          </div>
+          <div class="icons-links-subscribe-section-wrapper">
+            <i class="large star half outline icon"></i><a href="">Cooking</a>
           </div>
           <div id="links-subscribe-section">
             <a href="">Email Newsletter</a>
@@ -868,21 +896,5 @@
         </ul>
       </div>
     </footer>
-    <aside id="second-floating-sidebar">
-      <h2>Sign up for Science Times</h2>
-      <p>We’ll bring you stories that capture the wonders of the human body, nature and the cosmos.
-      <button>Sign Up</button>
-      </p>
-    </aside>
-
-    <aside id="first-floating-sidebar">
-      <h2>Editor's Picks</h2>
-      <div><img src="./assets/images/right-floating-sidebar1.jpg" alt=""><a href="#"><h3>Madonna at Sixty</h3></a></div>
-      <div><img src="./assets/images/right-floating-sidebar2.jpg" alt=""><h3> <a href="#">For These Women, a FIRE That Burns Too Male and Too White</a> </h3></div>
-      <div><img src="./assets/images/right-floating-sidebar3.jpg" alt=""><h3><a href="#">The Window That Burns the Plaza Hotel</a> </h3></div>
-
-      
-    </aside>
-
   </body>
 </html>
