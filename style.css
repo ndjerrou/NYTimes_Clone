@@ -37,6 +37,7 @@ nav {
 
 main {
   margin-top: 45px;
+  margin-bottom: 80px;
 }
 
 figure {
@@ -75,7 +76,7 @@ figcaption {
   font-size: 13px;
 }
 
-figure > img {
+figure>img {
   max-width: 100%;
   height: auto;
 }
@@ -129,8 +130,7 @@ article {
   color: grey;
 }
 
-#video-credits1,
-#video-credits2 {
+#video-credits1, #video-credits2 {
   margin: 0;
 }
 
@@ -185,8 +185,8 @@ i {
 
 #row-related-articles {
   display: flex;
-  justify-content: space-between;
-  width: 90%;
+  width: 75%;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -194,6 +194,10 @@ i {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.column-presentation-related-article>h5 {
+  width: 50%;
 }
 
 #related-articles {
@@ -251,16 +255,16 @@ footer {
   justify-content: space-between;
 }
 
-#columns-links-footer > ul > li {
+#columns-links-footer>ul>li {
   list-style-type: none;
   margin-top: 5px;
 }
 
-#columns-links-footer > ul > li > a {
+#columns-links-footer>ul>li>a {
   color: black;
 }
 
-#columns-links-footer > ul > li > a:hover {
+#columns-links-footer>ul>li>a:hover {
   color: black;
   text-decoration: underline;
 }
@@ -282,24 +286,25 @@ footer {
   flex-direction: column;
 }
 
-#icons-links-subscribe-section > i {
+#icons-links-subscribe-section>i {
   margin-right: 5px;
   background-color: white;
 }
 
-#icons-links-subscribe-section-wrapper > i {
+#icons-links-subscribe-section-wrapper>i {
   background-color: white;
   border: solid 0px white;
   margin-right: 16px;
 }
 
-#subscribe-section > div > a {
+#subscribe-section>div>a {
   color: black;
 }
 
-#subscribe-section > div > a:hover {
+#subscribe-section>div>a:hover {
   text-decoration: underline;
 }
+
 #icons-links-subscribe-section a {
   color: black;
   font-family: nyt-franklin;
@@ -310,12 +315,15 @@ footer {
   height: 25px;
   line-height: 15px;
 }
+
 #icons-links-subscribe-section a:hover {
   text-decoration: underline;
 }
+
 #links-subscribe-section {
   margin-top: 20px;
 }
+
 #links-subscribe-section a {
   font-family: nyt-franklin;
   text-transform: capitalize;
@@ -329,19 +337,25 @@ footer {
 #links-subscribe-section a:nth-child(3) {
   border-bottom: solid 1px lightgrey;
 }
+
 #line3-footer-horizontal-links {
   display: flex;
   justify-content: center;
   border-top: solid 1px lightgrey;
 }
+
 #line3-footer-horizontal-links ul li {
   display: inline-block;
   font-size: 11px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-
   padding-right: 15px;
 }
+
 #line3-footer-horizontal-links a {
   text-decoration: none;
   color: grey;
+}
+
+#test {
+  display: flex;
 }
