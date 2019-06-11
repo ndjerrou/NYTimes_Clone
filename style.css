@@ -38,6 +38,7 @@ nav {
 main {
   width: 90%;
   margin: 45px 100px 90px 100px;
+  font-size: 17px;
 }
 
 figure {
@@ -76,7 +77,7 @@ figcaption {
   font-size: 13px;
 }
 
-figure>img {
+figure > img {
   max-width: 100%;
   height: auto;
 }
@@ -130,7 +131,8 @@ article {
   color: grey;
 }
 
-#video-credits1, #video-credits2 {
+#video-credits1,
+#video-credits2 {
   margin: 0;
 }
 
@@ -196,8 +198,8 @@ i {
   align-items: flex-start;
 }
 
-.column-presentation-related-article>h5 {
-  width: 50%;
+.column-presentation-related-article > h5 {
+  width: 70%;
 }
 
 #related-articles {
@@ -211,12 +213,12 @@ aside {
 }
 
 .cover-img-related-art {
-  width: 273px;
-  height: 182px;
+  width: 90%;
+  height: auto;
 }
 
 .extract-related-article {
-  width: 85%;
+  width: 100%;
   font-size: 16px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -261,16 +263,16 @@ footer {
   justify-content: space-between;
 }
 
-#columns-links-footer>ul>li {
+#columns-links-footer > ul > li {
   list-style-type: none;
   margin-top: 5px;
 }
 
-#columns-links-footer>ul>li>a {
+#columns-links-footer > ul > li > a {
   color: black;
 }
 
-#columns-links-footer>ul>li>a:hover {
+#columns-links-footer > ul > li > a:hover {
   color: black;
   text-decoration: underline;
 }
@@ -292,22 +294,22 @@ footer {
   flex-direction: column;
 }
 
-#icons-links-subscribe-section>i {
+#icons-links-subscribe-section > i {
   margin-right: 5px;
   background-color: white;
 }
 
-#icons-links-subscribe-section-wrapper>i {
+#icons-links-subscribe-section-wrapper > i {
   background-color: white;
   border: solid 0px white;
   margin-right: 16px;
 }
 
-#subscribe-section>div>a {
+#subscribe-section > div > a {
   color: black;
 }
 
-#subscribe-section>div>a:hover {
+#subscribe-section > div > a:hover {
   text-decoration: underline;
 }
 
@@ -363,21 +365,79 @@ footer {
 }
 
 #popular-articles {
-  width: 150px;
+  width: 300px;
 }
 
-#popular-article>p>a {
+#popular-article > p > a {
   width: 150px;
   color: black;
 }
 
-#popular-article>p {
+#popular-article > p {
   margin: 15px 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   font-weight: 450;
 }
 
-#popular-article>p>a:hover {
-  text-decoration: transparent
+#popular-article > p > a:hover {
+  text-decoration: transparent;
+}
+#main-article {
+  position: relative;
+}
+#second-floating-sidebar {
+  position: absolute;
+  top: 2450px;
+  left: 1100px;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+#second-floating-sidebar h2 {
+  font-size: 18px;
+}
+#second-floating-sidebar p {
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+#second-floating-sidebar button {
+  color: white;
+  background-color: #6288a5;
+  padding: 5px 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* style for first-floating sidebar */
+#first-floating-sidebar {
+  position: absolute;
+  top: 1750px;
+  left: 1100px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+#first-floating-sidebar div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#first-floating-sidebar h3 {
+  font-size: 15px;
+  margin-left: 15px;
+}
+#first-floating-sidebar div img {
+  width: 75px;
+  height: 75px;
+}
+#first-floating-sidebar a {
+  color: #333333;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+#first-floating-sidebar a:hover {
+  text-decoration: underline;
 }
