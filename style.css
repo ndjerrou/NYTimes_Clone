@@ -36,8 +36,8 @@ nav {
 }
 
 main {
-  margin-top: 45px;
-  margin-bottom: 80px;
+  width: 90%;
+  margin: 45px 100px 90px 100px;
 }
 
 figure {
@@ -203,6 +203,11 @@ i {
 #related-articles {
   width: 70%;
   margin: 0 auto;
+  float: left;
+}
+
+aside {
+  float: left;
 }
 
 .cover-img-related-art {
@@ -224,6 +229,7 @@ i {
 footer {
   width: 80%;
   margin: 0 auto;
+  clear: left;
 }
 
 #separator-footer {
@@ -356,6 +362,22 @@ footer {
   color: grey;
 }
 
-#test {
-  display: flex;
+#popular-articles {
+  width: 150px;
+}
+
+#popular-article>p>a {
+  width: 150px;
+  color: black;
+}
+
+#popular-article>p {
+  margin: 15px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: 450;
+}
+
+#popular-article>p>a:hover {
+  text-decoration: transparent
 }
