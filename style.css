@@ -29,6 +29,7 @@ main {
   width: 90%;
   margin: 45px 100px 90px 100px;
   font-size: 17px;
+  position: relative;
 }
 
 figure {
@@ -194,13 +195,13 @@ i {
 }
 
 #related-articles {
-  width: 70%;
-  margin: 0 auto;
-  float: left;
+  position: relative;
 }
 
-aside {
-  float: left;
+#related-asidebar {
+  position: absolute;
+  bottom: 26rem;
+  right: -4rem;
 }
 
 .cover-img-related-art {
@@ -297,17 +298,17 @@ footer {
   justify-content: space-between;
   align-items: center; */
   margin: 10px 0px;
-  width: 100%;
 }
 
 .icons-links-subscribe-section-wrapper>i {
   background-color: white;
+  padding: 0;
 }
 
 .icons-links-subscribe-section-wrapper>a {
   font-size: 14px;
   font-weight: 500;
-  margin-left: 30px;
+  margin-left: 6px;
 }
 
 #subscribe-section>div>a {
@@ -395,8 +396,8 @@ footer {
 
 #second-floating-sidebar {
   position: absolute;
-  top: 2450px;
-  left: 1100px;
+  top: 170rem;
+  right: 20rem;
   display: flex;
   flex-direction: column;
   width: 150px;
