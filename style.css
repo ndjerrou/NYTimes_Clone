@@ -4,14 +4,32 @@
   align-items: center;
 }
 
+.nav-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+}
+
 .icon {
   background-color: white;
+}
+
+.el-navbar {
+  list-style-type: none;
 }
 
 #category-nav {
   display: flex;
   justify-content: space-between;
   width: 20%;
+}
+
+.font-aside>a {
+  text-decoration: none;
+  color: black;
 }
 
 .buttons-nav {
@@ -27,7 +45,7 @@
 
 main {
   width: 90%;
-  margin: 45px 100px 90px 100px;
+  margin: 95px 100px 90px 100px;
   font-size: 17px;
   position: relative;
 }
@@ -64,7 +82,15 @@ figcaption {
   width: 75%;
 }
 
-#author-art {
+.figure-aside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.author-art {
   color: grey;
   font-size: 13px;
 }
@@ -159,7 +185,8 @@ i {
   background-color: lightgrey;
   font-size: 10px;
   border-radius: 50%;
-  border: 1x solid lightgrey;
+  border-width: 1px;
+  border-style: solid;
   padding: 4px 8px;
 }
 
@@ -177,17 +204,14 @@ i {
   width: 50%;
 }
 
-#row-related-articles {
+.row-related-articles {
   display: flex;
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
-  margin-bottom: 20px;
 }
 
-.column-presentation-related-article {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.column-presentation-related-article>figure {
+  width: 100%;
 }
 
 .column-presentation-related-article>h5 {
@@ -195,7 +219,9 @@ i {
 }
 
 #related-articles {
-  position: relative;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
 }
 
 #related-asidebar {
@@ -374,19 +400,23 @@ footer {
   width: 300px;
 }
 
-#popular-article>p>a {
+#popular-articles>li {
+  list-style-type: none;
+}
+
+.popular-article>p>a {
   width: 150px;
   color: black;
 }
 
-#popular-article>p {
+.popular-article>p {
   margin: 15px 0;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
-  font-weight: 450;
+  font-weight: 400;
 }
 
-#popular-article>p>a:hover {
+.popular-article>p>a:hover {
   text-decoration: transparent;
 }
 
@@ -394,25 +424,36 @@ footer {
   position: relative;
 }
 
-#second-floating-sidebar {
-  position: absolute;
-  top: 170rem;
-  right: 20rem;
-  display: flex;
-  flex-direction: column;
-  width: 150px;
+.search icon>span {
+  font-weight: bold;
 }
 
-#second-floating-sidebar h2 {
+.subscription {
+  margin-top: 700px;
+}
+
+.first-asidebar {
+  margin-bottom: 300px;
+}
+
+#sidebar {
+  position: absolute;
+  top: 110rem;
+  left: 75%;
+  right: 25%;
+  width: 200px;
+}
+
+#sidebar h2 {
   font-size: 18px;
 }
 
-#second-floating-sidebar p {
+#sidebar p {
   font-size: 13px;
   padding-bottom: 10px;
 }
 
-#second-floating-sidebar button {
+#sidebar button {
   color: white;
   background-color: #6288a5;
   padding: 5px 20px;
@@ -437,12 +478,34 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  width: 100%;
   margin: 10px 0;
+}
+
+.left-asidebar-part>p {
+  font-size: 17px;
+  width: 50%;
+}
+
+.left-asidebar-part>p>a {
+  color: black;
+}
+
+.left-asidebar-part>p>a:hover {
+  text-decoration: underline;
 }
 
 .font-aside {
   font-size: 13px;
+  margin-left: 10px;
+}
+
+.font-aside>a:hover {
+  color: black;
+}
+
+.font-aside>a:hover {
+  text-decoration: underline;
 }
 
 #first-floating-sidebar h3 {
@@ -463,4 +526,12 @@ footer {
 
 #first-floating-sidebar a:hover {
   text-decoration: underline;
+}
+
+.icons-links-subscribe-section-wrapper>i {
+  border: none;
+}
+
+#category-nav>i {
+  border: none;
 }

@@ -12,27 +12,34 @@
     />
   </head>
   <body>
-    <nav>
+    <nav class="nav-menu">
       <ul class="container">
-        <div id="category-nav">
+        <li id="category-nav">
           <i class="align justify icon"></i>
           <i class="search icon"></i>
           <span>COSMOS</span>
-        </div>
-        <img src="./assets/images/The-New-York-Times-vector-logo.png" alt="" />
+        </li>
+        <li class="el-navbar">
+          <a href="https://www.nytimes.com"
+            >
+            <figure><img
+              src="./assets/images/The-New-York-Times-vector-logo.png"
+              alt=""
+            />
+          </figure>
+          </a>
+        </li>
 
-        <div id="subscription-nav">
+        <li id="subscription-nav" class="el-navbar">
           <button class="buttons-nav">
             Subscribe Today
           </button>
           <button class="buttons-nav">
             Log In
           </button>
-        </div>
+        </li>
       </ul>
     </nav>
-    <hr style="clear: right;" />
-
     <main>
       <section>
         <div id="container-art-title">
@@ -47,7 +54,7 @@
               Alan Guth was one of the first physicists to hypothesize the
               existence of inflation, which explains how the universe expanded
               so uniformly and so quickly in the instant after the Big Bang 13.8
-              billion years ago.<span id="author-art">
+              billion years ago.<span class="author-art">
                 Rick Friedman for The New York Times</span
               >
             </figcaption>
@@ -58,7 +65,9 @@
             <h3>By Dennis Overbye</h3>
             <div id="below-author-name">
               <span>March 17, 2014</span>
-              <img src="./assets/images/icons.jpg" alt="" />
+              <figure>
+                <img src="./assets/images/icons.jpg" alt="" />
+              </figure>
             </div>
 
             <p>
@@ -181,11 +190,13 @@
               years ago.
             </p>
             <div>
-              <img
-                id="article-image"
-                src="./assets/images/inflation-720.png"
-                alt=""
-              />
+              <figure>
+                <img
+                  id="article-image"
+                  src="./assets/images/inflation-720.png"
+                  alt=""
+                />
+              </figure>
             </div>
             <div id="text-on-image-upper">
               <p>
@@ -275,18 +286,22 @@
               >
               to tell him the news.
             </p>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/ZlfIVEy_YOA"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <p id="video-credits1">
-              Stanford Professor Andrei Linde celebrates physics breakthrough
-            </p>
-            <p id="video-credits2">Video by StanfordUniversity</p>
+            <figure>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ZlfIVEy_YOA"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <figcaption>
+                <p id="video-credits1">
+                  Stanford Professor Andrei Linde celebrates physics
+                  breakthrough
+                </p>
+                <p id="video-credits2">Video by StanfordUniversity</p>
+              </figcaption>
+            </figure>
             <p>
               Confused, Dr. Linde called out to his wife, asking if she had
               ordered anything.
@@ -389,7 +404,7 @@
                 The Bicep2 telescope, in the foreground, was used to detect the
                 faint spiraling gravity patterns — the signature of a universe
                 being wrenched violently apart at its birth.<span
-                  id="author-art"
+                  class="author-art"
                 >
                   Steffen Richter/Associated Press</span
                 >
@@ -537,133 +552,173 @@
       </section>
       <!-- begin related articles part -->
       <section id="related-articles">
-        <hr style="width: 75%;" />
-        <h3
-          style="width: 74%;
+        <div class="left-popular-articles">
+          <hr style="width: 75%;" />
+          <h3
+            style="width: 74%;
         margin: 20px auto 20px auto;"
-        >
-          More in Space & Cosmos
-        </h3>
-        <div id="row-related-articles">
-          <div class="column-presentation-related-article">
-            <img
-              src="./assets/images/related-article-cover1.jpg"
-              alt=""
-              class="cover-img-related-art"
-            />
-            <h5 class="extract-related-article">
-              Want to Buy a Ticket to the Space Station? NASA Says Soon You Can
-            </h5>
-            <span class="published-date-related-article">June 7</span>
+          >
+            More in Space & Cosmos
+          </h3>
+          <div class="row-related-articles">
+            <div class="column-presentation-related-article">
+              <figure>
+                <img
+                  src="./assets/images/related-article-cover1.jpg"
+                  alt=""
+                  class="cover-img-related-art"
+                />
+                <figcaption>
+                  <h5 class="extract-related-article">
+                    Want to Buy a Ticket to the Space Station? NASA Says Soon
+                    You Can
+                  </h5>
+                  <span class="published-date-related-article">June 7</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="column-presentation-related-article">
+              <figure>
+                <img
+                  src="./assets/images/related-article-cover2.jpg"
+                  alt=""
+                  class="cover-img-related-art"
+                />
+                <figcaption>
+                  <h5 class="extract-related-article">
+                    One Small Tweet for Trump, One Giant Question for NASA’s
+                    Moon Plans
+                  </h5>
+                  <span class="published-date-related-article">June 7</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="column-presentation-related-article">
+              <figure>
+                <img
+                  src="./assets/images/related-article-cover3.jpg"
+                  alt=""
+                  class="cover-img-related-art"
+                />
+                <figcaption>
+                  <h5 class="extract-related-article">
+                    Why Apollo 10 Stopped Just 47,000 Feet From the Moon
+                  </h5>
+                  <span class="published-date-related-article">May 13</span>
+                </figcaption>
+              </figure>
+            </div>
           </div>
-          <div class="column-presentation-related-article">
-            <img
-              src="./assets/images/related-article-cover2.jpg"
-              alt=""
-              class="cover-img-related-art"
-            />
-            <h5 class="extract-related-article">
-              One Small Tweet for Trump, One Giant Question for NASA’s Moon
-              Plans
-            </h5>
-            <span class="published-date-related-article">June 7</span>
+          <div class="row-related-articles">
+            <div class="column-presentation-related-article">
+              <figure>
+                <img
+                  src="./assets/images/related-article-4.jpg"
+                  alt=""
+                  class="cover-img-related-art"
+                />
+                <figcaption>
+                  <h5 class="extract-related-article">
+                    Want to Buy a Ticket to the Space Station? NASA Says Soon
+                    You Can
+                  </h5>
+                  <span class="published-date-related-article">June 7</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="column-presentation-related-article">
+              <figure>
+                <img
+                  src="./assets/images/related-article-5.jpg"
+                  alt=""
+                  class="cover-img-related-art"
+                />
+                <figcaption>
+                  <h5 class="extract-related-article">
+                    One Small Tweet for Trump, One Giant Question for NASA’s
+                    Moon Plans
+                  </h5>
+                  <span class="published-date-related-article">June 7</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="column-presentation-related-article">
+              <figure>
+                <img
+                  src="./assets/images/related-article-6.jpg"
+                  alt=""
+                  class="cover-img-related-art"
+                />
+                <figcaption>
+                  <h5 class="extract-related-article">
+                    Why Apollo 10 Stopped Just 47,000 Feet From the Moon
+                  </h5>
+                  <span class="published-date-related-article">May 13</span>
+                </figcaption>
+              </figure>
+            </div>
           </div>
-          <div class="column-presentation-related-article">
-            <img
-              src="./assets/images/related-article-cover3.jpg"
-              alt=""
-              class="cover-img-related-art"
-            />
-            <h5 class="extract-related-article">
-              Why Apollo 10 Stopped Just 47,000 Feet From the Moon
-            </h5>
-            <span class="published-date-related-article">May 13</span>
-          </div>
-        </div>
-        <div id="row-related-articles">
-          <div class="column-presentation-related-article">
-            <img
-              src="./assets/images/related-article-4.jpg"
-              alt=""
-              class="cover-img-related-art"
-            />
-            <h5 class="extract-related-article">
-              Want to Buy a Ticket to the Space Station? NASA Says Soon You Can
-            </h5>
-            <span class="published-date-related-article">June 7</span>
-          </div>
-          <div class="column-presentation-related-article">
-            <img
-              src="./assets/images/related-article-5.jpg"
-              alt=""
-              class="cover-img-related-art"
-            />
-            <h5 class="extract-related-article">
-              One Small Tweet for Trump, One Giant Question for NASA’s Moon
-              Plans
-            </h5>
-            <span class="published-date-related-article">June 7</span>
-          </div>
-          <div class="column-presentation-related-article">
-            <img
-              src="./assets/images/related-article-6.jpg"
-              alt=""
-              class="cover-img-related-art"
-            />
-            <h5 class="extract-related-article">
-              Why Apollo 10 Stopped Just 47,000 Feet From the Moon
-            </h5>
-            <span class="published-date-related-article">May 13</span>
-          </div>
-        </div>
-        <hr style="width: 75%;" />
-        <h3
-          style="width: 74%;
+          <hr style="width: 75%;" />
+          <h3
+            style="width: 74%;
         margin: 20px auto 20px auto;"
-        >
-          Editor's pick
-        </h3>
-        <div id="row-related-articles">
-          <div class="column-presentation-related-article">
-            <img
-              src="./assets/images/editor-pick-cover1.jpg"
-              alt=""
-              class="cover-img-related-art"
-            />
-            <h5 class="extract-related-article">
-              Want to Buy a Ticket to the Space Station? NASA Says Soon You Can
-            </h5>
-            <span class="published-date-related-article">June 7</span>
-          </div>
-          <div class="column-presentation-related-article">
-            <img
-              src="./assets/images/editor-pick-cover2.jpg"
-              alt=""
-              class="cover-img-related-art"
-            />
-            <h5 class="extract-related-article">
-              One Small Tweet for Trump, One Giant Question for NASA’s Moon
-              Plans
-            </h5>
-            <span class="published-date-related-article">June 7</span>
-          </div>
-          <div class="column-presentation-related-article">
-            <img
-              src="./assets/images/editor-pick-cover3.jpg"
-              alt=""
-              class="cover-img-related-art"
-            />
-            <h5 class="extract-related-article">
-              Why Apollo 10 Stopped Just 47,000 Feet From the Moon
-            </h5>
-            <span class="published-date-related-article">May 13</span>
+          >
+            Editor's pick
+          </h3>
+          <div class="row-related-articles">
+            <div class="column-presentation-related-article">
+              <figure>
+                <img
+                  src="./assets/images/editor-pick-cover1.jpg"
+                  alt=""
+                  class="cover-img-related-art"
+                />
+                <figcaption>
+                  <h5 class="extract-related-article">
+                    Want to Buy a Ticket to the Space Station? NASA Says Soon
+                    You Can
+                  </h5>
+                  <span class="published-date-related-article">June 7</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="column-presentation-related-article">
+              <figure>
+                <img
+                  src="./assets/images/editor-pick-cover2.jpg"
+                  alt=""
+                  class="cover-img-related-art"
+                />
+                <figcaption>
+                  <h5 class="extract-related-article">
+                    One Small Tweet for Trump, One Giant Question for NASA’s
+                    Moon Plans
+                  </h5>
+                  <span class="published-date-related-article">June 7</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="column-presentation-related-article">
+              <figure>
+                <img
+                  src="./assets/images/editor-pick-cover3.jpg"
+                  alt=""
+                  class="cover-img-related-art"
+                />
+                <figcaption>
+                  <h5 class="extract-related-article">
+                    Why Apollo 10 Stopped Just 47,000 Feet From the Moon
+                  </h5>
+                  <span class="published-date-related-article">May 13</span>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
-        <aside id="related-asidebar">
-          <!-- <hr />
-          <h3>Most Popular</h3> -->
-          <div id="popular-articles">
-            <div id="popular-article">
+        <!-- right side of the big block -->
+        <div class="popular-links">
+          <ul id="popular-articles">
+            <li class="popular-article">
               <hr />
               <h3>Most Popular</h3>
               <hr />
@@ -673,8 +728,8 @@
                   >How a 19th-Century Workman’s Cottage Became a Family Home</a
                 >
               </p>
-            </div>
-            <div id="popular-article">
+            </li>
+            <li class="popular-article">
               <hr />
               <p>
                 <a
@@ -682,8 +737,8 @@
                   >Put Off by Venice’s Crowds? Try the Oasis Next Door</a
                 >
               </p>
-            </div>
-            <div id="popular-article">
+            </li>
+            <li class="popular-article">
               <hr />
               <p>
                 <a
@@ -692,17 +747,17 @@
                   Said She Was Molested by a Minister.</a
                 >
               </p>
-            </div>
-            <div id="popular-article">
+            </li>
+            <li class="popular-article">
               <hr />
               <p>
                 <a
-                  href="https://www.nytimes.com/interactive/2019/06/10/magazine/mindy-kaling-late-night-diversity-comedy.html?fallback=0&recId=1MUuhAbut36WTUPj7vgeHMp8Djc&locked=0&geoContinent=EU&geoRegion=IDF&recAlloc=top_conversion&geoCountry=FR&blockId=most-popular&imp_id=240202987&action=click&module=trending&pgtype=Article&region=Footer"
+                  href="https://www.nytimes.com/interactive/2019/06/10/magazine/mindy-kaling-late-night-liersity-comedy.html?fallback=0&recId=1MUuhAbut36WTUPj7vgeHMp8Djc&locked=0&geoContinent=EU&geoRegion=IDF&recAlloc=top_conversion&geoCountry=FR&blockId=most-popular&imp_id=240202987&action=click&module=trending&pgtype=Article&region=Footer"
                   >Mindy Kaling on Not Being the Long-Suffering Indian Woman</a
                 >
               </p>
-            </div>
-            <div id="popular-article">
+            </li>
+            <li class="popular-article">
               <hr />
               <p>
                 <a
@@ -710,8 +765,8 @@
                   >One-Pot Wonders</a
                 >
               </p>
-            </div>
-            <div id="popular-article">
+            </li>
+            <li class="popular-article">
               <hr />
               <p>
                 <a
@@ -719,8 +774,8 @@
                   >How the Warriors Survived Game 5 of the N.B.A. Finals</a
                 >
               </p>
-            </div>
-            <div id="popular-article">
+            </li>
+            <li class="popular-article">
               <hr />
               <p>
                 <a
@@ -729,8 +784,8 @@
                   House</a
                 >
               </p>
-            </div>
-            <div id="popular-article">
+            </li>
+            <li class="popular-article">
               <hr />
               <p>
                 <a
@@ -738,38 +793,62 @@
                   >The Best and Worst of the 2019 Tony Awards</a
                 >
               </p>
-            </div>
-          </div>
-        </aside>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <aside id="second-floating-sidebar">
-        <h2>Sign up for Science Times</h2>
-        <p>
-          We’ll bring you stories that capture the wonders of the human body,
-          nature and the cosmos.
-          <button>Sign Up</button>
-        </p>
-      </aside>
-
-      <!-- <aside id="first-floating-sidebar">
-        <h2>Editor's Picks</h2>
-        <div class="left-asidebar-part">
-          <img src="./assets/images/right-floating-sidebar1.jpg" alt="" />
-          <p class="font-aside"><a href="#">Madonna at Sixty</a></p>
+      <aside id="sidebar">
+        <div class="first-asidebar">
+          <h2>Editor's Picks</h2>
+          <hr />
+          <div class="left-asidebar-part">
+            <figure class="figure-aside">
+              <img
+                src="./assets/images/right-floating-sidebar1.jpg"
+                alt=""
+                width="75"
+              />
+              <a href="#">
+                <figcaption class="font-aside">Madonna at Sixty</figcaption>
+              </a>
+            </figure>
+          </div>
+          <div class="left-asidebar-part">
+            <figure class="figure-aside">
+              <img
+                src="./assets/images/right-floating-sidebar2.jpg"
+                alt=""
+                width="75"
+              />
+              <a href="#">
+                <figcaption class="font-aside">
+                  For These Women, a FIRE That Burns Too Male and Too White
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+          <div class="left-asidebar-part">
+            <figure class="figure-aside">
+              <img
+                src="./assets/images/right-floating-sidebar3.jpg"
+                alt=""
+                width="75"
+              />
+              <a href="#">
+                <figcaption class="font-aside">
+                  The Window That Burns the Plaza Hotel
+                </figcaption>
+              </a>
+            </figure>
+          </div>
         </div>
-        <div class="left-asidebar-part">
-          <img src="./assets/images/right-floating-sidebar2.jpg" alt="" />
-          <p class="font-aside">
-            <a href="#"
-              >For These Women, a FIRE That Burns Too Male and Too White</a
-            >
-          </p>
-        </div>
-        <div class="left-asidebar-part">
-          <img src="./assets/images/right-floating-sidebar3.jpg" alt="" />
-          <p class="font-aside">
-            <a href="#">The Window That Burns the Plaza Hotel</a>
+        <div class="subscription">
+          <h2>Sign up for Science Times</h2>
+          <p>
+            We’ll bring you stories that capture the wonders of the human body,
+            nature and the cosmos.
+            <button>Sign Up</button>
           </p>
         </div>
       </aside> -->
@@ -777,17 +856,21 @@
     <footer>
       <hr id="separator-footer" />
       <div id="line-1-footer">
-        <img
-          src="./assets/images/The-New-York-Times-vector-logo.png"
-          alt=""
-          width="170px"
-        />
-        <a href="https://www.nytimes.com/" id="">Go to Home Page</a>
+        <a href="http://nytimes.com">
+          <figure>
+            <img
+              src="./assets/images/The-New-York-Times-vector-logo.png"
+              alt=""
+              width="170"
+            />
+          </figure>
+        </a>
+        <a href="https://www.nytimes.com/">Go to Home Page</a>
       </div>
       <div id="line-2-footer">
         <div id="columns-links-footer">
           <ul>
-            <h4>NEWS</h4>
+            <li><h4>NEWS</h4></li>
             <li><a href="https://www.nytimes.com/">Home Page</a></li>
             <li><a href="">World</a></li>
             <li><a href="">U.S.</a></li>
@@ -802,7 +885,7 @@
             <li><a href="">Corrections</a></li>
           </ul>
           <ul>
-            <h4>OPINION</h4>
+            <li><h4>OPINION</h4></li>
             <li><a href="">Today's opinion</a></li>
             <li><a href="">Op-Ed Columnists</a></li>
             <li><a href="">Editorials</a></li>
@@ -812,7 +895,7 @@
             <li><a href="">Video: opinion</a></li>
           </ul>
           <ul>
-            <h4>ARTS</h4>
+            <li><h4>ARTS</h4></li>
             <li><a href="">Today's Arts</a></li>
             <li><a href="">Art & Design</a></li>
             <li><a href="">Books</a></li>
@@ -824,7 +907,7 @@
             <li><a href="">Video Arts</a></li>
           </ul>
           <ul>
-            <h4>LIVING</h4>
+            <li><h4>LIVING</h4></li>
             <li><a href="">Automobiles</a></li>
             <li><a href="">Crossword</a></li>
             <li><a href="">Education</a></li>
@@ -840,7 +923,7 @@
             <li><a href="">Weddings</a></li>
           </ul>
           <ul>
-            <h4>MORE</h4>
+            <li><h4>MORE</h4></li>
             <li><a href="">Reader Center</a></li>
             <li><a href="">Wirecutter</a></li>
             <li><a href="">Live Events</a></li>
